@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationery Details Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="padding">
+        <div class="row">
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="col-sm-12 col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <span>CREDIT/DEBIT CARD PAYMENT</span>
+                                </div>
+                                <div class="col-md-6 text-right" style="margin-top: -5px;">
+                                    <img src="https://img.icons8.com/color/36/000000/visa.png">
+                                    <img src="https://img.icons8.com/color/36/000000/mastercard.png">
+                                    <img src="https://img.icons8.com/color/36/000000/amex.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="currency" class="control-label">CURRENCY:</label>
+                                <select id="currency" class="input-lg form-control" required>
+                                    <option value="select">Select</option>
+                                    <option value="USD">USD - United States Dollar</option>
+                                    <option value="EUR">EUR - Euro</option>
+                                    <option value="GBP">GBP - British Pound</option>
+                                    <option value="JPY">JPY - Japanese Yen</option>
+                                    <option value="AUD">AUD - Australian Dollar</option>
+                                    <option value="CAD">CAD - Canadian Dollar</option>
+                                    <option value="CHF">CHF - Swiss Franc</option>
+                                    <option value="CNY">CNY - Chinese Yuan</option>
+                                    <option value="INR">INR - Indian Rupee</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="amount" class="control-label">AMOUNT:</label>
+                                <input id="amount" type="number" class="input-lg form-control" placeholder="Enter Amount" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cc-number" class="control-label">CARD NUMBER:</label>
+                                <input id="cc-number" type="tel" class="input-lg form-control cc-number" autocomplete="cc-number" placeholder="•••• •••• •••• ••••" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="cc-exp" class="control-label">CARD EXPIRY:</label>
+                                        <input id="cc-exp" type="tel" class="input-lg form-control cc-exp" autocomplete="cc-exp" placeholder="•• / ••" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="cc-cvc" class="control-label">CARD CVC:</label>
+                                        <input id="cc-cvc" type="tel" class="input-lg form-control cc-cvc" autocomplete="off" placeholder="••••" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="numeric" class="control-label">CARD HOLDER NAME:</label>
+                                <input type="text" class="input-lg form-control">
+                            </div>
+                            <div class="form-group">
+                                <input value="MAKE PAYMENT" type="button" class="btn btn-success btn-lg form-control" style="font-size: .8rem;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scriptssmoney.js"></script>
+</body>
+</html>
